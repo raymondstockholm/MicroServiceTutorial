@@ -37,3 +37,8 @@ As you interact you should logging in the second and third windows.
 
 ## Ajout d'un ProductsService
 
+URL de test.
+
+Un seul Product - `http://localhost:4444/products/CEL`
+
+Les Products dont le nom contiennent 'livret' - `http://localhost:4444/products/name/livret`
