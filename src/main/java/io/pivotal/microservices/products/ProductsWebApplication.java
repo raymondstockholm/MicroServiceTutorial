@@ -50,28 +50,28 @@ public class ProductsWebApplication {
 		SpringApplication.run(ProductsWebApplication.class, args);
 	}
 
-	/**
-	 * Creates an in-memory "rewards" database populated with test data for fast
-	 * testing
-	 */
-	@Bean
-	public DataSource dataSource() {
-		logger.info("dataSource() invoked");
-
-		// Create an in-memory H2 relational database containing some demo
-		// accounts.
-		DataSource dataSource = (new EmbeddedDatabaseBuilder())
-				.addScript("classpath:testdb/schema-product.sql")
-				.addScript("classpath:testdb/data-product.sql").build();
-
-		logger.info("dataSource = " + dataSource);
-
-		// Sanity check
-		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-		List<Map<String, Object>> products = jdbcTemplate
-				.queryForList("SELECT name FROM T_PRODUCT");
-		logger.info("System has " + products.size() + " products");
-
-		return dataSource;
-	}
+//	/**
+//	 * Creates an in-memory "rewards" database populated with test data for fast
+//	 * testing
+//	 */
+//	@Bean
+//	public DataSource dataSource() {
+//		logger.info("dataSource() invoked");
+//
+//		// Create an in-memory H2 relational database containing some demo
+//		// accounts.
+//		DataSource dataSource = (new EmbeddedDatabaseBuilder())
+//				.addScript("classpath:testdb/schema-product.sql")
+//				.addScript("classpath:testdb/data-product.sql").build();
+//
+//		logger.info("dataSource = " + dataSource);
+//
+//		// Sanity check
+//		JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+//		List<Map<String, Object>> products = jdbcTemplate
+//				.queryForList("SELECT name FROM T_PRODUCT");
+//		logger.info("System has " + products.size() + " products");
+//
+//		return dataSource;
+//	}
 }

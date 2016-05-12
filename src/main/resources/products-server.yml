@@ -7,8 +7,12 @@ spring:
   thymeleaf:
     cache: false             # Allow Thymeleaf templates to be reloaded at runtime
     prefix: classpath:/products-server/templates/    # Trailing / mandatory
-                             # Template location for this application only
-
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:./db/bank-lab;MVCC=TRUE;FILE_LOCK=NO
+    username: admin
+    password: admin
+                             
 # Map the error path to error template (for Thymeleaf)
 error:
   path=/error

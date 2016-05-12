@@ -30,7 +30,7 @@ public class ProductsController {
 	public ProductsController(ProductRepository productRepository) {
 		this.productRepository = productRepository;
 
-		logger.info("AccountRepository says system has "
+		logger.info("ProductRepository says system has "
 				+ productRepository.countProducts() + " products");
 	}
 
