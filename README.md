@@ -44,3 +44,6 @@ Un seul Product - `http://localhost:4444/products/CEL`
 Les Products dont le nom contiennent 'livret' - `http://localhost:4444/products/name/livret`
 
 MODIF VIA ECLIPSE
+
+NB. Test eclipse
+
