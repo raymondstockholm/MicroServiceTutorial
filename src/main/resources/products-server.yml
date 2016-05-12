@@ -9,7 +9,7 @@ spring:
     prefix: classpath:/products-server/templates/    # Trailing / mandatory
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:./db/bank-lab;MVCC=TRUE;FILE_LOCK=NO
+    url: jdbc:h2:./db/bank-lab;MV_STORE=FALSE;MVCC=TRUE;FILE_LOCK=NO
     username: admin
     password: admin
                              
