@@ -49,5 +49,5 @@ NB. Test eclipse
 
 ## Initialisation de la DB H2/fichier pour Product et Bank
 
-Lancer mvn install  avec le profil db (voir pom.xml -> profiles -> profile -> id = db
+Lancer mvn install  avec le profil db (voir pom.xml -> profiles -> profile -> id = db)
 
