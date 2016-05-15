@@ -51,4 +51,4 @@ NB. Test eclipse
 
 Lancer mvn install  avec le profil db 
 (voir dans le pom.xml -> profiles -> profile -> id = db)
-
+Test update AVE-cesar/MicroServiceTutorial puis merge dans mon fork
